@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <title>Tic Tac Toe Game</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+	<header id="header">
+	<h1>Tic Tac Toe</h1>
+	<p>See if you can beat our Computer at Tic Tac Toe:</p>
+	</header>
+	<aside id="asidebar1"><h2>Lets play</h2>
+		<div id="snow_man">
+			<div id="cap"></div>
+			<div id="face"></div>
+			<div id="eye1"></div>
+			<div id="eye2"></div>
+			<div id="nose"></div>
+			<div id="tummy"><em>ENJOY</em></div>
+			<div id="left-arm"></div>
+			<div id="right-arm"></div>
+			<div id="leg1"></div>
+			<div id="leg2"></div>
+		</div>
+	</aside>
+    <main id="main">
+        <div class="row">
+            <div id="s1" onclick="playerTurn('1');"></div>
+            <div id="s2" onclick="playerTurn('2');"></div>
+            <div id="s3" onclick="playerTurn('3');"></div>
+        </div>
+        <div class="row">
+            <div id="s4" onclick="playerTurn('4');"></div>
+            <div id="s5" onclick="playerTurn('5');"></div>
+            <div id="s6" onclick="playerTurn('6');"></div>
+        </div>
+        <div class="row">
+            <div id="s7" onclick="playerTurn('7');"></div>
+            <div id="s8" onclick="playerTurn('8');"></div>
+            <div id="s9" onclick="playerTurn('9');"></div>
+        </div>
+    </main>
+    <footer>
+		<p>copyright@2019 TIC TAC TOE</p>
+	</footer>
+</body>
+</html>

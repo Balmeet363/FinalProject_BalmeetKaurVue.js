@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#snow_man {
+	height:400px;
+	width:300px;
+	animation: moveman 5s infinite;
+}
+#cap {
+	width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid red;
+	margin-left:100px;
+}
+#face {
+	height:60px;
+	width:70px;
+	background-color: #FCF3CF;
+	margin-left:100px;
+}
+#eye1 {
+	height:10px;
+	width:10px;
+	border-radius:5px;
+	background-color:black;
+	margin-left:110px;
+	margin-top:-50px;
+	animation: blinkeye 3s infinite;
+}
+#eye2 {
+	height:10px;
+	width:10px;
+	border-radius:5px;
+	background-color:black;
+	margin-left:150px;
+	margin-top:-10px;
+	animation:blinkeye 3s infinite;
+}
+#nose {
+	height:10px;
+	width:3px;
+	background-color:black;
+	margin-left:135px;
+	margin-top:13px;
+}
+#tummy {
+	height:100px;
+	width:100px;
+	background-color:green;
+	margin-left:85px;
+	margin-top:18px;
+}
+#left-arm {
+	height:10px;
+	width:85px;
+	background-color:black;
+	margin-top:-80px;
+}
+#right-arm {
+	height:10px;
+	width:85px;
+	background-color:black;
+	margin-top:-10px;
+	margin-left:185px;
+}
+#leg1 {
+	height:80px;
+	width:20px;
+	background-color:#FCF3CF;
+	margin-left:100px;
+	margin-top:40px;
+}
+#leg2 {
+	height:80px;
+	width:20px;
+	background-color:#FCF3CF;
+	margin-left:150px;
+	margin-top:-80px;
+}
+
+@keyframes blinkeye {
+0% {
+	background-color:white;
+}
+}
+
+@keyframes moveman {
+	50% {
+		top:10%;
+		transform:translateY(100%);
+	}
+}

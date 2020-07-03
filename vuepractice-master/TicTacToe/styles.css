@@ -1,0 +1,168 @@
+html {
+	box-sizing:border-box;
+}
+*,*::before,*::after {
+	box-sizing:inherit;
+}
+body {
+    font-family: sans-serif;
+    text-align: center;
+	margin:0;
+	background-color:#F0B27A;
+}
+#main {
+    width: 900px;
+    border: 1px solid black;
+    display: table;
+	margin-left:350px;
+	margin-top:-300px;
+	
+}
+#main .row {
+    display: table-row;
+}
+#s1:hover,#s5:hover,#s9:hover {
+	background-color:pink;
+	border:2px solid blue;
+}
+#s2:hover,#s7:hover,#s4:hover {
+	background-color:orange;
+	border:2px solid blue;
+}
+#s3:hover,#s6:hover,#s8:hover {
+	background-color:gray;
+	border:2px solid blue;
+}
+#main div {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: table-cell;
+}
+
+#snow_man {
+	height:300px;
+	width:300px;
+	animation: moveman 10s infinite both;
+}
+#cap {
+	width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid red;
+	margin-left:100px;
+}
+#face {
+	height:60px;
+	width:70px;
+	background-color: #FCF3CF;
+	margin-left:100px;
+}
+#eye1 {
+	height:10px;
+	width:10px;
+	border-radius:5px;
+	background-color:black;
+	margin-left:110px;
+	margin-top:-50px;
+	animation: blinkeye 3s infinite;
+}
+#eye2 {
+	height:10px;
+	width:10px;
+	border-radius:5px;
+	background-color:black;
+	margin-left:150px;
+	margin-top:-10px;
+	animation:blinkeye 3s infinite;
+}
+#nose {
+	height:10px;
+	width:3px;
+	background-color:black;
+	margin-left:135px;
+	margin-top:13px;
+}
+#tummy {
+	height:100px;
+	width:100px;
+	background-color:green;
+	margin-left:85px;
+	margin-top:18px;
+}
+#tummy em {
+	color:#F4D03F;
+}
+#left-arm {
+	height:10px;
+	width:85px;
+	background-color:black;
+	margin-top:-80px;
+}
+#right-arm {
+	height:10px;
+	width:85px;
+	background-color:black;
+	margin-top:-10px;
+	margin-left:185px;
+}
+#leg1 {
+	height:80px;
+	width:20px;
+	background-color:#FCF3CF;
+	margin-left:100px;
+	margin-top:40px;
+}
+#leg2 {
+	height:80px;
+	width:20px;
+	background-color:#FCF3CF;
+	margin-left:150px;
+	margin-top:-80px;
+}
+
+@keyframes blinkeye {
+0% {
+	background-color:white;
+}
+}
+#snow_man:hover {
+	animation-play-state:paused;
+}
+@keyframes moveman {
+	50% {
+		top:20%;
+		transform:translateY(200%);
+	}
+}
+/* I tried it responsive but i donot know to change the sixe of image in js file upon using in tablet and mobile  */
+@media screen and (max-width:768px) {
+  #main div {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+  }
+  #main {
+    width: 500px;
+    border: 1px solid red;
+    display: table;
+}
+
+@media screen and (max-width:368px) {
+  #aside {
+    clear:both;
+    width:100%;
+  }
+  #main div {
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    display: table-cell;
+  }
+  #main {
+    width: 200px;
+    border: 1px solid red;
+    display: table;
+}
